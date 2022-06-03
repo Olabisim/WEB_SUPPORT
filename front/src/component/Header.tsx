@@ -8,7 +8,7 @@ export const Header = () => {
                         
                 <div className="content">
 
-                        <img src="images/logo.png" className="logo" alt="LOGO." />
+                        {/* <img src="images/logo.png" className="logo" alt="DHYMM." /> */}
 
                         <h1>TRAVELLING<br /> AROUND THE WORLD</h1>
                         <h2>An awesome website is under construction, stay tuned.</h2>
