@@ -10,8 +10,8 @@ export const Header = () => {
 
                         {/* <img src="images/logo.png" className="logo" alt="DHYMM." /> */}
 
-                        <h1>TRAVELLING<br /> AROUND THE WORLD</h1>
-                        <h2>An awesome website is under construction, stay tuned.</h2>
+                        <h1>No.1 COMPUTER<br /> HARDWARE SOLUTIONS</h1>
+                        <h2>are you currently having a hardware problem? post it here</h2>
 
                         <div className="arrow bounce">
                                 <a className="fa fa-arrow-down" href="#sd">x</a>
