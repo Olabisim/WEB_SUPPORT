@@ -1,12 +1,20 @@
+
+.stats-container-main {
+        display: flex;
+        justify-content: center;
+        height: 400px;
+        align-items: center;
+        text-align: center;
+}
 .stats-container {
 margin: 20px;
 background-color: #fff;
 min-width: 200px;
-height: 100px;
+height: 220px;
 border-radius: 12px 12px 0 0;
 position: relative;
 padding: 20px;
-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+/* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
 }
 .stats-container.orange {
 border-bottom: 5px solid #fca311;
@@ -16,6 +24,9 @@ border-bottom: 5px solid #0096c7;
 }
 .stats-container.red {
 border-bottom: 5px solid #e63946;
+}
+.stats-container i {
+        font-size: 80px;
 }
 .stats-container.orange i {
 color: #fca311;
@@ -34,34 +45,33 @@ font-weight: 400;
 left: 50%;
 transform: translateX(-50%);
 white-space: nowrap;
-color: #888888;
+font-size: 20px;
 }
 
-.icon {
+.counter {
+        font-size: 55px;
+        font-weight: 100;
+        padding-top: 10px;
+}
+
+/* .icon {
 position: absolute;
 top: -30px;
 left: 50%;
 transform: translateX(-50%);
-}
+} */
 
-.counter {
-font-size: 50px;
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
-color: rgb(0, 0, 0);
-}
-button {
-position: absolute;
-top: -80px;
-left: 0;
-background-color: #ffffff;
-border: 0;
-outline: none;
-padding: 5px;
-cursor: pointer;
-border: 2px solid #888888;
-}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 800px) {
 body {
         flex-direction: column;
