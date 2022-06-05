@@ -1,9 +1,55 @@
 
+import '../css/createfaultform.css'
 
 export const CreateFaultForm = () => {
-        return (
-                <div>
 
+        return (
+                <div className="createFaultFormmain">
+
+                        <div className="container">
+                                <div className="box"></div>
+                                <div className="container-forms">
+                                <div className="container-info">
+                                <div className="info-item">
+                                        <div className="table">
+                                                <div className="table-cell">
+                                                        <p>
+                                                        Have an account?
+                                                        </p>
+                                                        <div className="btn">
+                                                        POST
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div className="info-item">
+                                        <div className="table">
+                                        <div className="table-cell">
+                                        <p>
+                                        {/* Don't have an account?  */}
+                                        </p>
+                                        <div className="btn">
+                                        Go back
+                                        </div>
+                                        </div>
+                                        </div>
+                                </div>
+                                </div>
+                                <div className="container-form">
+                                <div className="form-item log-in">
+                                        <div className="table">
+                                        <div className="table-cell">
+                                        <input name="Username" placeholder="title" type="text" /><input name="Password" placeholder="Place a fault" type="Password" />
+                                        <div className="btn">
+                                        POST
+                                        </div>
+                                        </div>
+                                        </div>
+                                </div>
+                                </div>
+                                </div>
+                        </div>
+                        
                 </div>
         )
 }
