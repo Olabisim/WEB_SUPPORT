@@ -1,11 +1,41 @@
 
 export const ViewFaults = () => {
+
+        interface faultSolutionArrType {
+                title: String,
+                description:String
+        }
+
+        const faultSolutionArr:faultSolutionArrType[] = [
+                {
+                        title: 'PC keyboard malfunctioning',
+                        description: 'Open Notepad to figure out the particular key that is malfunctioning'
+                
+                },
+                {
+                        title: 'PC keyboard malfunctioning',
+                        description: 'Open Notepad to figure out the particular key that is malfunctioning'
+                },
+                {
+                        title: 'PC keyboard malfunctioning',
+                        description: 'Open Notepad to figure out the particular key that is malfunctioning'
+                },
+                {
+                        title: 'PC keyboard malfunctioning',
+                        description: 'Open Notepad to figure out the particular key that is malfunctioning'
+                },
+
+        ]
+
+
         return (
                 <div>
-                        <div>FAULTS</div>
+                        {/* <div>FAULTS</div> */}
                         
-                                {/* <!-- Snippet --> */}
-                                <section className="flex flex-col justify-center antialiased bg-gray-50 text-gray-600 min-h-screen p-4">
+                        
+                                {faultSolutionArr.map(each =>  (
+                                        
+                                <section className="m-10">
                                 <div className="h-full">
                                         {/* <!-- Card --> */}
                                         <div className="max-w-2xl mx-auto bg-indigo-600 shadow-lg rounded-lg">
@@ -57,6 +87,8 @@ export const ViewFaults = () => {
                                 </div>
                         </section>
 
+                         ))
+                        } 
                 </div>
         )
 }
