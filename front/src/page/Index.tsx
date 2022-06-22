@@ -2,6 +2,7 @@
 import { Header } from "../component/Header"
 import '../css/statscontainer.css'
 import '../css/home.css'
+import { Link } from "react-router-dom"
 
 export const Home = () => {
         return (
@@ -41,7 +42,9 @@ export const Home = () => {
                                                         
                                                 </div>
                                                 <div>
-                                                        <div className="input_fault plus-circle"></div>
+                                                        <Link to="/create">
+                                                                <div className="input_fault plus-circle"></div>
+                                                        </Link>
 
                                                 </div>
                                         </div>

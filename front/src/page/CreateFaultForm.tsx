@@ -1,5 +1,6 @@
 
 import '../css/createfaultform.css'
+import { Link } from 'react-router-dom'
 
 export const CreateFaultForm = () => {
 
@@ -28,9 +29,11 @@ export const CreateFaultForm = () => {
                                         <p>
                                         {/* Don't have an account?  */}
                                         </p>
-                                        <div className="btn">
-                                        Go back
-                                        </div>
+                                        <Link to="/">
+                                                <div className="btn">
+                                                        Go back
+                                                </div>
+                                        </Link>
                                         </div>
                                         </div>
                                 </div>
@@ -39,9 +42,10 @@ export const CreateFaultForm = () => {
                                 <div className="form-item log-in">
                                         <div className="table">
                                         <div className="table-cell">
-                                        <input name="Username" placeholder="title" type="text" /><input name="Password" placeholder="Place a fault" type="Password" />
+                                        <input name="Username" placeholder="title" type="text" />
+                                        <input name="Fautl" placeholder="Place a fault" type="text" />
                                         <div className="btn">
-                                        POST
+                                                POST
                                         </div>
                                         </div>
                                         </div>

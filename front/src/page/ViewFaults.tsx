@@ -9,20 +9,20 @@ export const ViewFaults = () => {
         const faultSolutionArr:faultSolutionArrType[] = [
                 {
                         title: 'PC keyboard malfunctioning',
-                        description: 'Open Notepad to figure out the particular key that is malfunctioning'
+                        description: 'Open Notepad to figure out the particular key that is malfunctioning ...'
                 
                 },
                 {
-                        title: 'PC keyboard malfunctioning',
-                        description: 'Open Notepad to figure out the particular key that is malfunctioning'
+                        title: 'PC not powering on',
+                        description: 'Take out the battery and put it back before putting the PC on ...'
                 },
                 {
-                        title: 'PC keyboard malfunctioning',
-                        description: 'Open Notepad to figure out the particular key that is malfunctioning'
+                        title: 'PC crashes before loading OS completely ',
+                        description: 'This could be a problem of a corrupted  R.A.M ...'
                 },
                 {
-                        title: 'PC keyboard malfunctioning',
-                        description: 'Open Notepad to figure out the particular key that is malfunctioning'
+                        title: 'PC showing Blue Screen of Death (BSOD)',
+                        description: 'Open Device Manager by typing devmgmt.msc in the Run or search for ‘device manager’ in the search bar.'
                 },
 
         ]
@@ -38,7 +38,7 @@ export const ViewFaults = () => {
                                 <section className="m-10">
                                 <div className="h-full">
                                         {/* <!-- Card --> */}
-                                        <div className="max-w-2xl mx-auto bg-indigo-600 shadow-lg rounded-lg">
+                                        <div className="max-w-2xl mx-auto bg-indigo-600 rounded-lg" style={{background: "black"}}>
                                         <div className="px-6 py-5">
                                                 <div className="flex items-start">
                                                 {/* <!-- Icon --> */}
@@ -52,7 +52,7 @@ export const ViewFaults = () => {
                                                         {/* <!-- Card header --> */}
                                                         <div className="w-full sm:flex justify-between items-center mb-3">
                                                         {/* <!-- Title --> */}
-                                                        <h2 className="text-2xl leading-snug font-extrabold text-gray-50 truncate mb-1 sm:mb-0">Simple Design Tips</h2>
+                                                        <h2 className="text-2xl leading-snug font-extrabold text-gray-50 truncate mb-1 sm:mb-0">{each.title}</h2>
                                                         {/* <!-- Like and comment buttons --> */}
                                                         <div className="flex-shrink-0 flex items-center space-x-3 sm:ml-2">
                                                                 <button className="flex items-center text-left text-sm font-medium text-indigo-100 hover:text-white group focus:outline-none focus-visible:border-b focus-visible:border-indigo-100">
@@ -73,7 +73,7 @@ export const ViewFaults = () => {
                                                         <div className="flex items-end justify-between whitespace-normal">
                                                         {/* <!-- Paragraph --> */}
                                                         <div className="max-w-md text-indigo-100">
-                                                                <p className="mb-2">Lorem ipsum dolor sit amet, consecte adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                                                <p className="mb-2">{each.description}</p>
                                                         </div>
                                                         {/* <!-- More link --> */}
                                                         <a className="flex-shrink-0 flex items-center justify-center text-indigo-600 w-10 h-10 rounded-full bg-gradient-to-b from-indigo-50 to-indigo-100 hover:from-white hover:to-indigo-50 focus:outline-none focus-visible:from-white focus-visible:to-white transition duration-150 ml-2" href="#0">
